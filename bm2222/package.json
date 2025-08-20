@@ -1,0 +1,29 @@
+{
+  "name": "bookmind2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test-connection": "node scripts/test-connection.js",
+    "collect-books-test": "node scripts/collect-books.js test",
+    "collect-books-quick": "node scripts/collect-books.js full 200",
+    "collect-books": "node scripts/collect-books.js full 1000",
+    "aggregate-reviews": "node scripts/aggregate-reviews.js all 50"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.5",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "@vitejs/plugin-react": "^4.3.1"
+  }
+}
